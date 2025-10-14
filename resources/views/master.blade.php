@@ -24,12 +24,6 @@
         padding-top: 100px;
     }
 </style>
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            alert("Hello");
-        });
-    });
-    </script>
+
 </html>
 
