@@ -18,5 +18,16 @@ use App\Http\Controllers\ProductController;
 //    return view('welcome');
 //});
 Route::view('/', 'login');
+Route::get('/login', function () {
+    return view('login'); // 👈 your login.blade.php view file
+});
+Route::get('/logout', function () {
+    session()->forget('user');
+    return view('login'); // 👈 your login.blade.php view file
+});
 Route::post('/login', [UserController::class, 'login']);
 Route::get('/', [ProductController::class, 'index']);
+Route::get('/product', [ProductController::class, 'product']);
+Route::get('detail/{id}', [ProductController::class, 'detail']);
+Route::get('search', [ProductController::class, 'search']);
+Route::post('add_to_cart', [ProductController::class, 'addToCart']);

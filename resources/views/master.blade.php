@@ -23,6 +23,38 @@
         height: 500px;
         padding-top: 100px;
     }
+    .slider-img{
+height: 400px !important;
+    }
+    .custom-product{
+        height:600px;
+    }
+    .slider-text{
+        background-color: #35443585 !important;
+    }
+    .trending-wrapper{
+    margin:20px;
+    }
+    .trending-items{
+        float:left;
+        width:20%;
+
+    }
+    .trending-img{
+        height:100px;
+    }
+    .detail-img {
+  height: 400px;
+  transition: transform 0.4s ease; /* smooth zoom animation */
+  cursor: zoom-in; /* show zoom cursor */
+}
+
+.detail-img:hover {
+  transform: scale(1.2); /* zoom in */
+}
+.search-box{
+    width:500px !important;
+}
 </style>
 
 </html>
